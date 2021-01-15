@@ -18,7 +18,7 @@ tambahTombol.addEventListener("click", function () {
 const slider = document.querySelector("input[name=sMerah]"); //!
 const slider2 = document.querySelector("input[name=sHijau]"); //!
 const slider3 = document.querySelector("input[name=sBiru]"); //!
-slider.addEventListener("change", function () {
+slider.addEventListener("input", function () {
     //? .value digunakan untuk menerima semua yg ada di input
     //? dalam hal ini adalah min dan max
     //? kalo misal input yg lain brarti nerima apapun yg diisikan
@@ -27,13 +27,13 @@ slider.addEventListener("change", function () {
     const b = slider3.value;
     document.body.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
 });
-slider2.addEventListener("change", function () {
+slider2.addEventListener("input", function () {
     const r = slider.value;
     const g = slider2.value;
     const b = slider3.value;
     document.body.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
 });
-slider3.addEventListener("change", function () {
+slider3.addEventListener("input", function () {
     const r = slider.value;
     const g = slider2.value;
     const b = slider3.value;
